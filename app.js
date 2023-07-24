@@ -25,7 +25,7 @@ function addTask() {
 function deleteTask(event) {
   const listItem = event.target.parentElement;
   taskList.removeChild(listItem);
-
+r̥
   updateTotalTasks();
 }
 
