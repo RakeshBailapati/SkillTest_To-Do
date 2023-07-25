@@ -25,7 +25,6 @@ function addTask() {
 function deleteTask(event) {
   const listItem = event.target.parentElement;
   taskList.removeChild(listItem);
-r̥
   updateTotalTasks();
 }
 
@@ -46,6 +45,7 @@ taskList.addEventListener('click', (event) => {
   } else if (event.target.tagName === 'LABEL') {
     toggleChecked(event);
   }
+  updateTotalTasks();
 });
 
 function selectAllTasks() {
